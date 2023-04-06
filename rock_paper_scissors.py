@@ -1,12 +1,9 @@
 from random import shuffle
 rps = ["rock","paper","scissors"]
 guess =""
-
 wins = []
 losses = []
 game = True
-
-
 
 def check_restart():
         check = input("Keep playing? type anything to continue or type n to stop and reset: ")
@@ -19,11 +16,7 @@ def check_restart():
              
         else:
             pass
-        
-    
-        
-    
-
+       
 def game_on():
     while game:
         shuffle(rps) 
@@ -87,6 +80,5 @@ def game_on():
                 print("Tie")
                 print(f"wins : {len(wins)}")
                 print(f"losses : {len(losses)}")
-                check_restart()
-            
+                check_restart()           
 game_on()
